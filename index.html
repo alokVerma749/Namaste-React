@@ -8,17 +8,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Hello World using HTML only -->
-    <div id="root1">
-        <h1>Hello world by HTML</h1>
-    </div>
     <div id="root"></div>
 </body>
-<!-- 
-    Sequence of scripts sholud be like this
- -->
-<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-<script src="./App.js">
+<!-- Becouste APP.js is not a normal js script, so we have to use type="module" -->
+<script type="module" src="./App.js">
 </script>
 </html>
