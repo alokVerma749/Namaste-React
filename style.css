@@ -1,4 +1,92 @@
-#child h1,
-h2 {
-  color: red;
+.header {
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+}
+.nav-items {
+  display: flex;
+  justify-content: space-around;
+  font-size: large;
+}
+.logo {
+  height: 50px;
+}
+.body {
+  border: 1px solid black;
+  padding: 5px;
+}
+.body .search-bar-container {
+  text-align: center;
+}
+.body .search-bar-container input {
+  height: 33px;
+  width: 230px;
+  margin: 5px;
+}
+.body .search-bar-container button {
+  height: 35px;
+  width: 100px;
+  font-size: 15px;
+  margin-left: 5px;
+  background: rgb(48, 165, 48);
+  color: white;
+  border: none;
+}
+.body .search-bar-container button:hover {
+  font-weight: bold;
+  color: rgb(211, 211, 211);
+  transition: ease-in-out;
+  transition-duration: 0.2s;
+}
+.res-cardsContainer {
+  margin: 10px 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.res-card {
+  width: 20vw;
+  margin: 9px 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 3px;
+  background-color: #f0f0f0;
+  box-shadow: 6px 6px 15px 1px #24a3188f;
+  max-height: 600px;
+  max-width: 400px;
+}
+.res-card:hover {
+  width: 22vw;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  box-shadow: 6px 6px 25px 1px #24a3188f;
+  transition-duration: 0.5s;
+}
+.res-card img {
+  width: 99%;
+  text-align: center;
+  margin: 0 auto;
+}
+.res-card .cuisines {
+  color: rgb(116, 150, 109);
+  font-size: medium;
+}
+.res-card .address {
+  color: rgb(109, 112, 109);
+  font-size: medium;
+}
+
+.res-card .price {
+  color: rgb(68, 68, 68);
+  font-size: medium;
+}
+.res-card .price ul {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  justify-content: space-around;
 }
